@@ -105,7 +105,7 @@ module.exports = (app) =>{
         var dados = req.body
         //visualizar os dados
 
-        var atualizar = await atividades.findByIdAndUpdate(
+        var atualizar = await atividades.findOneAndUpdate(
         {_id:dados.id_a},
 
         {
